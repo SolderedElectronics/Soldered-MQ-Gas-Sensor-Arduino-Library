@@ -8,14 +8,12 @@ jobs:
     strategy:
       matrix:
         board:
-          - fqbn: Dasduino_Boards:megaavr:Attiny
-          - fqbn: Dasduino_Boards:esp8266:connect
+          - fqbn: Dasduino_Boards:megaavr:liteo
+          - fqbn: Dasduino_Boards:esp8266:generic
           - fqbn: Dasduino_Boards:esp32:connectplus
           - fqbn: Dasduino_Boards:esp32:lora32
           - fqbn: Dasduino_Boards:avr:core
           - fqbn: Dasduino_Boards:avr:LoRa
-          # - fqbn: Dasduino_Boards:stm32:swiftf1
-          # - fqbn: Dasduino_Boards:stm32:swiftl0
 
     steps:
       - name: Checkout dev branch
