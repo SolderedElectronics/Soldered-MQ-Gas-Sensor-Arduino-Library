@@ -15,6 +15,12 @@
 
 // Include the library
 #include "MQ-Sensor-SOLDERED.h"
+// You can change the values of the variables below to pin you're using
+#ifdef __AVR__
+#define SENSOR_PIN A1
+#else
+#define SENSOR_PIN 5
+#endif
 
 double alcoholPPM = (0);
 // Defaults, uncomment if you need
@@ -34,7 +40,7 @@ double alcoholPPM = (0);
 unsigned long counter = 0;
 
 
-MQ2 mq2(A1);
+MQ2 mq2(SENSOR_PIN);
 
 void setup()
 {
