@@ -10,7 +10,27 @@
 # Methods and Functions (KEYWORD2)
 ##################################################
 
-begin	KEYWORD2
+begin KEYWORD2
+init KEYWORD2
+update KEYWORD2
+setR0 KEYWORD2
+setRL KEYWORD2
+setA KEYWORD2
+setB KEYWORD2
+setRegressionMethod KEYWORD2
+setVoltResolution KEYWORD2
+serialDebug KEYWORD2
+calibrate KEYWORD2
+readSensor KEYWORD2
+validateEcuation KEYWORD2
+getA KEYWORD2
+getB KEYWORD2
+getR0 KEYWORD2
+getRL KEYWORD2
+getVoltResolution KEYWORD2
+getRegressionMethod KEYWORD2
+getVoltage KEYWORD2
+stringTofloat KEYWORD2
 
 ##################################################
 # Constants (LITERAL1)
