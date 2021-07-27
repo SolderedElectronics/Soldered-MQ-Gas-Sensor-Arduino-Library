@@ -14,7 +14,8 @@ jobs:
           - fqbn: Dasduino_Boards:esp32:lora32
           - fqbn: Dasduino_Boards:avr:core
           - fqbn: Dasduino_Boards:avr:LoRa
-
+      fail-fast: false
+      
     steps:
       - name: Checkout dev branch
         uses: actions/checkout@v2
