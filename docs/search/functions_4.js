@@ -1,6 +1,10 @@
 var searchData=
 [
-  ['sendaddress_32',['sendAddress',['../class_easy_c.html#a10aa7df19e8c7bf12cd720b662f317a3',1,'EasyC']]],
-  ['senddata_33',['sendData',['../class_easy_c.html#afe8aa014ae53cad3b0f3c42f59277195',1,'EasyC']]],
-  ['sensor_34',['Sensor',['../class_sensor.html#a2b8ea6b15267f6fa0e263f57a09f6b62',1,'Sensor']]]
+  ['geta_101',['getA',['../class_m_q_unifiedsensor.html#aa71cd6d05c5a4198088db7657cb48404',1,'MQUnifiedsensor']]],
+  ['getb_102',['getB',['../class_m_q_unifiedsensor.html#af59261b0c8c35cdb6308f195c763ec22',1,'MQUnifiedsensor']]],
+  ['getr0_103',['getR0',['../class_m_q_unifiedsensor.html#a1fd2e225f3010207e922195054c02986',1,'MQUnifiedsensor']]],
+  ['getregressionmethod_104',['getRegressionMethod',['../class_m_q_unifiedsensor.html#a9a9e7875731512adac3c3418cb0417c1',1,'MQUnifiedsensor']]],
+  ['getrl_105',['getRL',['../class_m_q_unifiedsensor.html#ac9d0fc493a8bfc861b607a1a76af86e5',1,'MQUnifiedsensor']]],
+  ['getvoltage_106',['getVoltage',['../class_m_q_unifiedsensor.html#a02daad319286ab07aa54015d161acc0f',1,'MQUnifiedsensor']]],
+  ['getvoltresolution_107',['getVoltResolution',['../class_m_q_unifiedsensor.html#a300a0982a30ea94fab92ffcc2c841154',1,'MQUnifiedsensor']]]
 ];

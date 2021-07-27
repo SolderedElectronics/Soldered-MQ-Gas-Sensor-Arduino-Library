@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['begin_1',['begin',['../class_easy_c.html#a1b5a82b8a59daea79de76e496457e176',1,'EasyC::begin()'],['../class_easy_c.html#a9e71467da6f38cbe47b10e96694a4f91',1,'EasyC::begin(uint8_t _address)']]],
-  ['begindone_2',['beginDone',['../class_easy_c.html#a2f55de657a84e73edda23dae91d30436',1,'EasyC']]]
+  ['address_16',['address',['../class_easy_c.html#a6f4c6f2e8723b0c0495e126d49f5fcda',1,'EasyC']]],
+  ['apin_17',['aPin',['../class_m_q___sensor.html#a088d6d8a5852960e28ae3dc7cd2a1db1',1,'MQ_Sensor']]]
 ];

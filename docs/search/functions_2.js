@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['initializenative_29',['initializeNative',['../class_sensor.html#adb537c76173019fddf84b2d89e6c6559',1,'Sensor::initializeNative()'],['../class_easy_c.html#a48c8aa55d48ef0cc11047cab0735c998',1,'EasyC::initializeNative()']]]
+  ['digitalread_99',['digitalRead',['../class_m_q___sensor.html#a718e3373b0ff3a9d540c927a729a0335',1,'MQ_Sensor']]]
 ];
