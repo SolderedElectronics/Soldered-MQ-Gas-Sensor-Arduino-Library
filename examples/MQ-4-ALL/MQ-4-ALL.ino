@@ -24,9 +24,16 @@
 // Include the library
 #include "MQ-Sensor-SOLDERED.h"
 
+// You can change the values of the variables below to pin you're using
+#ifdef __AVR__
+#define SENSOR_PIN A1
+#else
+#define SENSOR_PIN 5
+#endif
+
 #define RatioMQ4CleanAir (4.4) // RS / R0 = 60 ppm
 
-MQ4 mq4(A1); // analog input 1
+MQ4 mq4(SENSOR_PIN); // analog input 1
 
 void setup()
 {

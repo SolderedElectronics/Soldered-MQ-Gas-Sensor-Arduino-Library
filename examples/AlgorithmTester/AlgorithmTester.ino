@@ -16,8 +16,15 @@
 // Include the library
 #include "MQ-Sensor-SOLDERED.h"
 
+// You can change the values of the variables below to pin you're using
+#ifdef __AVR__
+#define SENSOR_PIN A1
+#else
+#define SENSOR_PIN 5
+#endif
+
 // Declare Sensor, any MQ will work
-MQ2 sensor(A1);
+MQ2 sensor(SENSOR_PIN);
 
 /*****************************Globals***********************************************/
 double ratio[4] = {};

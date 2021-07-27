@@ -37,7 +37,14 @@
 
 #include "MQ-Sensor-SOLDERED.h"
 
-MQ2 mq2(A1, 2); // connect sensor to analog input A1, digital pin 2 for digitalRead
+// You can change the values of the variables below to pin you're using
+#ifdef __AVR__
+#define SENSOR_PIN A1
+#else
+#define SENSOR_PIN 5
+#endif
+
+MQ2 mq2(SENSOR_PIN, 2); // connect sensor to analog input A1, digital pin 2 for digitalRead
 
 void setup()
 {

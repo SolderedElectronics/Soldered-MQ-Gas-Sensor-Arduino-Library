@@ -22,14 +22,17 @@
 
 // Include the library
 #include "MQ-Sensor-SOLDERED.h"
-/************************Hardware Related Macros************************************/
-#define Pin (A1) // Analog input 3 of your arduino
-/***********************Software Related Macros************************************/
+
+// You can change the values of the variables below to pin you're using
+#ifdef __AVR__
+#define SENSOR_PIN A1
+#else
+#define SENSOR_PIN 5
+#endif
+
 #define RatioMQ2CleanAir (9.83) // RS / R0 = 9.83 ppm
 
-/*****************************Globals***********************************************/
-MQ2 mq2(A1);
-/*****************************Globals***********************************************/
+MQ2 mq2(SENSOR_PIN);
 
 void setup()
 {
