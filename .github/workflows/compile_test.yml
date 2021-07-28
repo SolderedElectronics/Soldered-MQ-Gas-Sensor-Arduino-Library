@@ -8,8 +8,8 @@ jobs:
     strategy:
       matrix:
         board:
-          - fqbn: Dasduino_Boards:megaavr:liteo
-          - fqbn: Dasduino_Boards:esp8266:generic
+          - fqbn: Dasduino_Boards:megaavr:lite
+          - fqbn: Dasduino_Boards:esp8266:connect
           - fqbn: Dasduino_Boards:esp32:connectplus
           - fqbn: Dasduino_Boards:esp32:lora32
           - fqbn: Dasduino_Boards:avr:core
