@@ -1,6 +1,5 @@
 var hierarchy =
 [
-    [ "EasyC", "class_easy_c.html", null ],
     [ "MQUnifiedsensor", "class_m_q_unifiedsensor.html", [
       [ "MQ_Sensor", "class_m_q___sensor.html", [
         [ "MQ135", "class_m_q135.html", null ],

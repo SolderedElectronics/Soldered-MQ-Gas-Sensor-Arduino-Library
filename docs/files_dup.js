@@ -1,9 +1,5 @@
 var files_dup =
 [
-    [ "easyC.cpp", "easy_c_8cpp.html", null ],
-    [ "easyC.h", "easy_c_8h.html", [
-      [ "EasyC", "class_easy_c.html", "class_easy_c" ]
-    ] ],
     [ "MQ-Sensor-SOLDERED.cpp", "_m_q-_sensor-_s_o_l_d_e_r_e_d_8cpp.html", null ],
     [ "MQ-Sensor-SOLDERED.h", "_m_q-_sensor-_s_o_l_d_e_r_e_d_8h.html", [
       [ "MQ_Sensor", "class_m_q___sensor.html", "class_m_q___sensor" ],

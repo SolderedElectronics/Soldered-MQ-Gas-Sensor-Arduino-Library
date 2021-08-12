@@ -1,6 +1,5 @@
 var annotated_dup =
 [
-    [ "EasyC", "class_easy_c.html", "class_easy_c" ],
     [ "MQ135", "class_m_q135.html", "class_m_q135" ],
     [ "MQ2", "class_m_q2.html", "class_m_q2" ],
     [ "MQ3", "class_m_q3.html", "class_m_q3" ],
