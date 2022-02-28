@@ -3,9 +3,9 @@
 [![Compile Sketches](http://github-actions.40ants.com/e-radionicacom/Soldered-MQ-Sensor-Arduino-Library/matrix.svg?branch=dev&only=Compile%20Sketches)](https://github.com/e-radionicacom/Soldered-MQ-Sensor-Arduino-Library/actions/workflows/compile_test.yml)
 [![Make docs and publish to GitHub Pages](https://github.com/e-radionicacom/Soldered-MQ-Sensor-Arduino-Library/actions/workflows/make_docs.yml/badge.svg?branch=dev)](https://github.com/e-radionicacom/Soldered-MQ-Sensor-Arduino-Library/actions/workflows/make_docs.yml)
 
-| ![MQ-X](https://upload.wikimedia.org/wikipedia/commons/8/8f/Example_image.svg) |
+| ![MQ-X Gas sensor](https://upload.wikimedia.org/wikipedia/commons/8/8f/Example_image.svg) |
 | :---------------------------------------------------------------------------------------------: |
-| [MQ-X](https://www.solde.red/333041)                                                            |
+| [MQ-X Gas sensor](https://www.solde.red/333041)                                                            |
 
 MQ-X Gas Sensors Arduino Library soon to be compliant to [easyC ecosystem](https://www.soldered.com/easyC). 
 
