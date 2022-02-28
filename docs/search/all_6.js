@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['init_32',['init',['../class_m_q_unifiedsensor.html#aa54a17912ae33657024565b4e24106a1',1,'MQUnifiedsensor']]]
+  ['init_0',['init',['../class_m_q_unifiedsensor.html#aa54a17912ae33657024565b4e24106a1',1,'MQUnifiedsensor']]]
 ];
