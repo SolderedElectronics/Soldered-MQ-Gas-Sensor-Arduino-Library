@@ -3,9 +3,36 @@
 [![Compile Sketches](http://github-actions.40ants.com/e-radionicacom/Soldered-MQ-Sensor-Arduino-Library/matrix.svg?branch=dev&only=Compile%20Sketches)](https://github.com/e-radionicacom/Soldered-MQ-Sensor-Arduino-Library/actions/workflows/compile_test.yml)
 [![Make docs and publish to GitHub Pages](https://github.com/e-radionicacom/Soldered-MQ-Sensor-Arduino-Library/actions/workflows/make_docs.yml/badge.svg?branch=dev)](https://github.com/e-radionicacom/Soldered-MQ-Sensor-Arduino-Library/actions/workflows/make_docs.yml)
 
-| ![MQ-X Gas sensor](https://upload.wikimedia.org/wikipedia/commons/8/8f/Example_image.svg) |
+| ![MQ sensor breakout board](https://upload.wikimedia.org/wikipedia/commons/8/8f/Example_image.svg) |
 | :---------------------------------------------------------------------------------------------: |
-| [MQ-X Gas sensor](https://www.solde.red/333041)                                                            |
+| [MQ2 sensor breakout board](https://www.solde.red/333102)                                                            |
+| [MQ3 sensor breakout board](https://www.solde.red/333103)                                                            |
+| [MQ4 sensor breakout board](https://www.solde.red/333104)                                                            |
+| [MQ5 sensor breakout board](https://www.solde.red/333105)                                                            |
+| [MQ6 sensor breakout board](https://www.solde.red/333106)                                                            |
+| [MQ7 sensor breakout board](https://www.solde.red/333107)                                                            |
+| [MQ8 sensor breakout board](https://www.solde.red/333108)                                                            |
+| [MQ9 sensor breakout board](https://www.solde.red/333109)                                                            |
+| [MQ131 sensor breakout board](https://www.solde.red/333110)                                                            |
+| [MQ135 sensor breakout board](https://www.solde.red/333111)                                                            |
+| [MQ136 sensor breakout board](https://www.solde.red/333112)                                                            |
+| [MQ137 sensor breakout board](https://www.solde.red/333113)                                                            |
+| [MQ138 sensor breakout board](https://www.solde.red/333114)                                                            |
+| [MQ214 sensor breakout board](https://www.solde.red/333115)                                                            |
+| [MQ2 sensor breakout board with easyC](https://www.solde.red/333116)                                                            |
+| [MQ3 sensor breakout board with easyC](https://www.solde.red/333117)                                                            |
+| [MQ4 sensor breakout board with easyC](https://www.solde.red/333118)                                                            |
+| [MQ5 sensor breakout board with easyC](https://www.solde.red/333119)                                                            |
+| [MQ6 sensor breakout board with easyC](https://www.solde.red/333120)                                                            |
+| [MQ7 sensor breakout board with easyC](https://www.solde.red/333121)                                                            |
+| [MQ8 sensor breakout board with easyC](https://www.solde.red/333122)                                                            |
+| [MQ9 sensor breakout board with easyC](https://www.solde.red/333123)                                                            |
+| [MQ131 sensor breakout board with easyC](https://www.solde.red/333124)                                                            |
+| [MQ135 sensor breakout board with easyC](https://www.solde.red/333125)                                                            |
+| [MQ136 sensor breakout board with easyC](https://www.solde.red/333126)                                                            |
+| [MQ137 sensor breakout board with easyC](https://www.solde.red/333127)                                                            |
+| [MQ138 sensor breakout board with easyC](https://www.solde.red/333128)                                                            |
+| [MQ214 sensor breakout board with easyC](https://www.solde.red/333129)                                                            |
 
 MQ-X Gas Sensors Arduino Library soon to be compliant to [easyC ecosystem](https://www.soldered.com/easyC). 
 
