@@ -29,19 +29,20 @@ var NAVTREE =
       [ "Repository Contents", "index.html#autotoc_md1", null ],
       [ "Hardware design", "index.html#autotoc_md2", null ],
       [ "Documentation", "index.html#autotoc_md3", null ],
-      [ "About Soldered", "index.html#autotoc_md4", null ],
-      [ "Original source", "index.html#autotoc_md5", null ],
-      [ "Open-source license", "index.html#autotoc_md6", null ],
-      [ "Our Pledge", "md_src_libs__m_q_unifiedsensor__c_o_d_e__o_f__c_o_n_d_u_c_t.html#autotoc_md8", null ],
-      [ "Our Standards", "md_src_libs__m_q_unifiedsensor__c_o_d_e__o_f__c_o_n_d_u_c_t.html#autotoc_md9", null ],
-      [ "Our Responsibilities", "md_src_libs__m_q_unifiedsensor__c_o_d_e__o_f__c_o_n_d_u_c_t.html#autotoc_md10", null ],
-      [ "Scope", "md_src_libs__m_q_unifiedsensor__c_o_d_e__o_f__c_o_n_d_u_c_t.html#autotoc_md11", null ],
-      [ "Enforcement", "md_src_libs__m_q_unifiedsensor__c_o_d_e__o_f__c_o_n_d_u_c_t.html#autotoc_md12", null ],
-      [ "Attribution", "md_src_libs__m_q_unifiedsensor__c_o_d_e__o_f__c_o_n_d_u_c_t.html#autotoc_md13", null ]
+      [ "Board compatibility", "index.html#autotoc_md4", null ],
+      [ "About Soldered", "index.html#autotoc_md5", null ],
+      [ "Original source", "index.html#autotoc_md6", null ],
+      [ "Open-source license", "index.html#autotoc_md7", null ],
+      [ "Our Pledge", "md_src_libs__m_q_unifiedsensor__c_o_d_e__o_f__c_o_n_d_u_c_t.html#autotoc_md9", null ],
+      [ "Our Standards", "md_src_libs__m_q_unifiedsensor__c_o_d_e__o_f__c_o_n_d_u_c_t.html#autotoc_md10", null ],
+      [ "Our Responsibilities", "md_src_libs__m_q_unifiedsensor__c_o_d_e__o_f__c_o_n_d_u_c_t.html#autotoc_md11", null ],
+      [ "Scope", "md_src_libs__m_q_unifiedsensor__c_o_d_e__o_f__c_o_n_d_u_c_t.html#autotoc_md12", null ],
+      [ "Enforcement", "md_src_libs__m_q_unifiedsensor__c_o_d_e__o_f__c_o_n_d_u_c_t.html#autotoc_md13", null ],
+      [ "Attribution", "md_src_libs__m_q_unifiedsensor__c_o_d_e__o_f__c_o_n_d_u_c_t.html#autotoc_md14", null ]
     ] ],
     [ "Contributing", "md_src_libs__m_q_unifiedsensor__c_o_n_t_r_i_b_u_t_i_n_g.html", [
-      [ "Pull Request Process", "md_src_libs__m_q_unifiedsensor__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md15", null ],
-      [ "Review of pull request", "md_src_libs__m_q_unifiedsensor__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md16", null ]
+      [ "Pull Request Process", "md_src_libs__m_q_unifiedsensor__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md16", null ],
+      [ "Review of pull request", "md_src_libs__m_q_unifiedsensor__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md17", null ]
     ] ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
