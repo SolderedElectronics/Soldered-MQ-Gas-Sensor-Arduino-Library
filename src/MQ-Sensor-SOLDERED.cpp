@@ -9,19 +9,24 @@
  * @authors     Zvonimir Haramustek for soldered.com
  ***************************************************/
 
-
 #include "MQ-Sensor-SOLDERED.h"
-
 
 /**
  * @brief                   Overloaded function for virtual in base class to initialize sensor specific.
  */
-void MQ_Sensor::begin()
+void MQ_Sensor::begin(int _addr)
 {
-    if (aPin != -1)
-        pinMode(aPin, INPUT);
-    if (dPin != -1)
-        pinMode(dPin, INPUT);
+    if (_addr)
+    {
+        init(_addr);
+    }
+    else
+    {
+        if (aPin != -1)
+            pinMode(aPin, INPUT);
+        if (dPin != -1)
+            pinMode(dPin, INPUT);
+    }
 }
 
 /**

@@ -24,19 +24,10 @@
 // Include the library
 #include "MQ-Sensor-SOLDERED.h"
 
-// You can change the values of the variables below to pin you're using
-#ifdef __AVR__
-#define SENSOR_PIN A1
-#else
-#define SENSOR_PIN 5
-#endif
-
 #define RatioMQ135CleanAir 3.6 // RS / R0 = 3.6 ppm
 
-MQ135 mq135(SENSOR_PIN);  // If you have easyC version of this sensor
-                          // just plug it in microcontroller and
-                          // remove this "(SENSOR_PIN)" because sensor
-                          // is not connected to pin but on I2C bus
+MQ135 mq135;  // If this sensor is easyC, you don't need to specify on which
+            // pin is connected
 
 void setup()
 {
@@ -49,10 +40,9 @@ void setup()
     /*****************************  MQ Init ********************************************/
     // Remarks: Configure the pin of arduino as input.
     /************************************************************************************/
-    mq135.begin(); // If you have easyC version of this sensor
-                 // you should add here I2C address of sensor
-                 // which is 0x30 by default and can be changed
-                 // by onboard switches labeled with ADDR
+    mq135.begin(0x30);      // Here you need to specify I2C address of sensor.
+                        // By default it is set to 0x30, but you can change 
+                        // Using onboard switches labeled with ADDR
     /*
       //If the RL value is different from 10K please assign your RL value with the following method:
       mq135.setRL(10);

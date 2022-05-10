@@ -6,14 +6,16 @@
  *
 
  *
- * @authors     Zvonimir Haramustek for soldered.com
+ * @authors     @ soldered.com
  ***************************************************/
 
 #include "easyC.h"
 #include <Wire.h>
 
-int addr = DEFAULT_ADDRESS;
+int lastEvent=0;
 
+int addr = DEFAULT_ADDRESS;
+uint16_t d=0;
 void setup()
 {
     initDefault();
@@ -26,8 +28,8 @@ void setup()
 
 void loop()
 {
+ 
 }
-
 
 void receiveEvent(int howMany)
 {
@@ -41,8 +43,12 @@ void receiveEvent(int howMany)
 
 void requestEvent()
 {
-    int n = 5;
-
-    char a[n];
-    Wire.write(a, n);
+    char a[2];
+    d = analogRead(PA5);
+    if (lastEvent==0)
+    {
+      a[0] = d & 0xFF;
+      a[1] = (d >> 8) & 0xFF;     
+      Wire.write(a, 2);
+    }
 }

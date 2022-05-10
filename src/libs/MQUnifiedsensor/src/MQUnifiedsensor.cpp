@@ -1,6 +1,6 @@
 #include "MQUnifiedsensor.h"
 
-MQUnifiedsensor::MQUnifiedsensor(String Placa, float Voltage_Resolution, int ADC_Bit_Resolution, int pin, String type) {
+MQUnifiedsensor::MQUnifiedsensor(int pin, String Placa, float Voltage_Resolution, int ADC_Bit_Resolution, String type) {
   this->_pin = pin;
   Placa.toCharArray(this->_placa, 20);
   type.toCharArray(this->_type, 6);
@@ -9,9 +9,12 @@ MQUnifiedsensor::MQUnifiedsensor(String Placa, float Voltage_Resolution, int ADC
   this-> _VOLT_RESOLUTION = Voltage_Resolution;
   this-> _ADC_Bit_Resolution = ADC_Bit_Resolution;
 }
-void MQUnifiedsensor::init()
+void MQUnifiedsensor::init(int _addr)
 {
-  pinMode(_pin, INPUT);
+    addr = _addr;
+
+    Wire.begin();
+
 }
 void MQUnifiedsensor::setA(float a) {
   this->_a = a;
@@ -106,7 +109,18 @@ void MQUnifiedsensor::serialDebug(bool onSetup)
 }
 void MQUnifiedsensor::update()
 {
-  _sensor_volt = this->getVoltage();
+  if(native){
+    _sensor_volt = this->getVoltage();
+  }
+  else
+  {
+    uint8_t temp[2];
+    Wire.requestFrom(addr, 2);
+    temp[0] = Wire.read();
+    temp[1] = Wire.read();
+    _sensor_volt = (temp[0] | temp[1] << 8) / 1024.0 * _VOLT_RESOLUTION;
+  }
+
 }
 float MQUnifiedsensor::validateEcuation(float ratioInput)
 {
@@ -186,3 +200,11 @@ float MQUnifiedsensor::stringTofloat(String & str)
 {
   return atof( str.c_str() );
 }
+
+ int MQUnifiedsensor::readData(char a[], int n)
+    {
+        Wire.requestFrom(addr, n);
+        Wire.readBytes(a, n);
+
+        return 0;
+    }

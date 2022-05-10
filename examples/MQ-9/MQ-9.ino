@@ -33,7 +33,10 @@
 
 #define RatioMQ9CleanAir (9.6) // RS / R0 = 60 ppm
 
-MQ9 mq9(SENSOR_PIN); // pin A1
+MQ9 mq9(SENSOR_PIN);  // If you have easyC version of this sensor
+                     // just plug it in microcontroller and
+                     // remove this "(SENSOR_PIN)" because sensor
+                     // is not connected to pin but on I2C bus
 
 void setup()
 {
@@ -56,7 +59,10 @@ void setup()
     /*****************************  MQ Init ********************************************/
     // Remarks: Configure the pin of arduino as input.
     /************************************************************************************/
-    mq9.begin();
+    mq9.begin(); // If you have easyC version of this sensor
+                 // you should add here I2C address of sensor
+                 // which is 0x30 by default and can be changed
+                 // by onboard switches labeled with ADDR
     /*
       //If the RL value is different from 10K please assign your RL value with the following method:
       mq9.setRL(10);
