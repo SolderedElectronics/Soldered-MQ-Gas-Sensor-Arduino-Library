@@ -1,6 +1,6 @@
 var class_m_q_unifiedsensor =
 [
-    [ "MQUnifiedsensor", "class_m_q_unifiedsensor.html#a99bafeaacfdfff2bed8f3cee0cc70ffd", null ],
+    [ "MQUnifiedsensor", "class_m_q_unifiedsensor.html#a17f46b3007746736498c0946ddc6517f", null ],
     [ "calibrate", "class_m_q_unifiedsensor.html#ab637906938490dd166be5dd50959275f", null ],
     [ "getA", "class_m_q_unifiedsensor.html#aa71cd6d05c5a4198088db7657cb48404", null ],
     [ "getB", "class_m_q_unifiedsensor.html#af59261b0c8c35cdb6308f195c763ec22", null ],
@@ -9,7 +9,8 @@ var class_m_q_unifiedsensor =
     [ "getRL", "class_m_q_unifiedsensor.html#ac9d0fc493a8bfc861b607a1a76af86e5", null ],
     [ "getVoltage", "class_m_q_unifiedsensor.html#a02daad319286ab07aa54015d161acc0f", null ],
     [ "getVoltResolution", "class_m_q_unifiedsensor.html#a300a0982a30ea94fab92ffcc2c841154", null ],
-    [ "init", "class_m_q_unifiedsensor.html#aa54a17912ae33657024565b4e24106a1", null ],
+    [ "init", "class_m_q_unifiedsensor.html#ae16a66bc22abd1a3aa904eab22293450", null ],
+    [ "readData", "class_m_q_unifiedsensor.html#a84203a8ddfa3ce72a8a4e05ad370684b", null ],
     [ "readSensor", "class_m_q_unifiedsensor.html#a341807d033dafffa30006b1bcb4d8c98", null ],
     [ "serialDebug", "class_m_q_unifiedsensor.html#ad1eacdd924f38689ff38663fc9dcd1a8", null ],
     [ "setA", "class_m_q_unifiedsensor.html#af844153d5a21adacdd9c1cb5c7cfb9e1", null ],
@@ -38,5 +39,7 @@ var class_m_q_unifiedsensor =
     [ "_sensor_volt", "class_m_q_unifiedsensor.html#a76fbd1df68ff2429448550c1143d63c6", null ],
     [ "_type", "class_m_q_unifiedsensor.html#a46df65d59f4d5f54487e4c6a8cd5c3a5", null ],
     [ "_VOLT_RESOLUTION", "class_m_q_unifiedsensor.html#a1a9ac995d0bb3fb50fa777897cfd14f3", null ],
+    [ "addr", "class_m_q_unifiedsensor.html#ad974079b0b279e8c8f915526a3819c66", null ],
+    [ "native", "class_m_q_unifiedsensor.html#a8d3a952ad95b9dc8a1ac88bda4515450", null ],
     [ "RS_air", "class_m_q_unifiedsensor.html#ab434b58e72c833c020c1411f5385ac23", null ]
 ];
