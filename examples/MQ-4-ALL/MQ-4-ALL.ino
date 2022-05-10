@@ -33,7 +33,10 @@
 
 #define RatioMQ4CleanAir (4.4) // RS / R0 = 60 ppm
 
-MQ4 mq4(SENSOR_PIN); // analog input 1
+MQ4 mq4(SENSOR_PIN); // If you have easyC version of this sensor
+                     // just plug it in microcontroller and
+                     // remove this "(SENSOR_PIN)" because sensor
+                     // is not connected to pin but on I2C bus
 
 void setup()
 {
@@ -47,7 +50,10 @@ void setup()
     /*****************************  MQ Init ********************************************/
     // Remarks: Configure the pin of arduino as input.
     /************************************************************************************/
-    mq4.begin();
+    mq4.begin(); // If you have easyC version of this sensor
+                 // you should add here I2C address of sensor
+                 // which is 0x30 by default and can be changed
+                 // by onboard switches labeled with ADDR
     /*
       //If the RL value is different from 10K please assign your RL value with the following method:
       mq4.setRL(10);

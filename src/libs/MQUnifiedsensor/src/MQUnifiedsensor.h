@@ -3,6 +3,7 @@
 
 #include <Arduino.h>
 #include <stdint.h>
+#include "Wire.h"
 
 /***********************Software Related Macros************************************/
 
@@ -13,10 +14,10 @@
 class MQUnifiedsensor
 {
   public:
-    MQUnifiedsensor(String Placa = "Arduino", float Voltage_Resolution =  5, int ADC_Bit_Resolution = 10, int pin = 1, String type = "CUSTOM MQ");
+    MQUnifiedsensor(int pin = 1, String Placa = "Arduino", float Voltage_Resolution =  5, int ADC_Bit_Resolution = 10, String type = "CUSTOM MQ");
     
     //Functions to set values
-    void init();
+    void init(int addr);
     void update();
     void setR0(float R0 = 10);
     void setRL(float RL = 10);
@@ -41,10 +42,14 @@ class MQUnifiedsensor
     String getRegressionMethod();
     float getVoltage(int read = true);
     
-    float stringTofloat(String & str);    
+    float stringTofloat(String & str);   
+    
+    bool native = 1; 
+    byte addr = 0;
 
   private:
     /************************Private vars************************************/
+    int readData(char a[], int n);
     byte _pin;
     byte _firstFlag = false;
     byte _VOLT_RESOLUTION  = 5.0; // if 3.3v use 3.3

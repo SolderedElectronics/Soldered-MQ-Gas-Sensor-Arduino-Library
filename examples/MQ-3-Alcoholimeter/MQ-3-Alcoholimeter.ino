@@ -35,7 +35,10 @@
 
 double alcoholPPM = (0);
 
-MQ3 mq3(SENSOR_PIN);
+MQ3 mq3(SENSOR_PIN); // If you have easyC version of this sensor
+                     // just plug it in microcontroller and
+                     // remove this "(SENSOR_PIN)" because sensor
+                     // is not connected to pin but on I2C bus
 
 void setup()
 {
@@ -64,7 +67,10 @@ void setup()
     /*****************************  MQ Init ********************************************/
     // Remarks: Configure the pin of arduino as input.
     /************************************************************************************/
-    mq3.begin();
+    mq3.begin(); // If you have easyC version of this sensor
+                 // you should add here I2C address of sensor
+                 // which is 0x30 by default and can be changed
+                 // by onboard switches labeled with ADDR
     /*****************************  MQ CAlibration ********************************************/
     // Explanation:
     // In this routine the sensor will measure the resistance of the sensor supposing before was pre-heated
