@@ -23,7 +23,7 @@
 #elif ESP32
 
 #define VOLTAGE_RES 3.3
-#define ADC_RES     10
+#define ADC_RES     12
 
 #elif ESP8266
 
@@ -34,19 +34,19 @@
 class MQ_Sensor : public MQUnifiedsensor
 {
   public:
-    MQ_Sensor(int _aPin, int _dPin, String type) : MQUnifiedsensor(aPin, "Arduino", VOLTAGE_RES, ADC_RES, type)
+    MQ_Sensor(int _aPin, int _dPin, String type) : MQUnifiedsensor(_aPin, "Arduino", VOLTAGE_RES, ADC_RES, type)
     {
-      if(_aPin == -1)
-      {
-        native = 0;
-        setVoltResolution(5);
-        setADC(10);
-      }
-      else
-      {
-        aPin = _aPin;
-        dPin = _dPin;
-      }
+        if (_aPin == -1)
+        {
+            native = 0;
+            setVoltResolution(5);
+            setADC(10);
+        }
+        else
+        {
+            aPin = _aPin;
+            dPin = _dPin;
+        }
     }
 
     void begin(int _addr = 0x00);
@@ -55,7 +55,6 @@ class MQ_Sensor : public MQUnifiedsensor
 
   private:
     int aPin, dPin;
-
 };
 
 class MQ2 : public MQ_Sensor
