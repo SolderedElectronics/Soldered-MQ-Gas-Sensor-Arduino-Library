@@ -23,7 +23,7 @@
 #elif ESP32
 
 #define VOLTAGE_RES 3.3
-#define ADC_RES     10
+#define ADC_RES     12
 
 #elif ESP8266
 
@@ -34,7 +34,7 @@
 class MQ_Sensor : public MQUnifiedsensor
 {
   public:
-    MQ_Sensor(int _aPin, int _dPin, String type) : MQUnifiedsensor(aPin, "Arduino", VOLTAGE_RES, ADC_RES, type)
+    MQ_Sensor(int _aPin, int _dPin, String type) : MQUnifiedsensor(_aPin, "Arduino", VOLTAGE_RES, ADC_RES, type)
     {
         if (_aPin == -1)
         {
