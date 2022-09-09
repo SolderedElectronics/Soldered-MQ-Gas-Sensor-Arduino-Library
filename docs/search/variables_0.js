@@ -11,9 +11,9 @@ var searchData=
   ['_5fr0_8',['_R0',['../class_m_q_unifiedsensor.html#acd2d5c62b98490ed0fc45c9a2e14c42d',1,'MQUnifiedsensor']]],
   ['_5fratio_9',['_ratio',['../class_m_q_unifiedsensor.html#ab21c86c2319d6e555527af93a828cd20',1,'MQUnifiedsensor']]],
   ['_5fregressionmethod_10',['_regressionMethod',['../class_m_q_unifiedsensor.html#a7ca35341a982ccf7d782266f7422c75b',1,'MQUnifiedsensor']]],
-  ['_5frl_11',['_RL',['../class_m_q_unifiedsensor.html#ac82dd6ddaf9e0bfbd13d6fd977c5fcc3',1,'MQUnifiedsensor']]],
+  ['_5frl_11',['_RL',['../class_m_q_unifiedsensor.html#abad8cfc4c659844f7ee656df1c516165',1,'MQUnifiedsensor']]],
   ['_5frs_5fcalc_12',['_RS_Calc',['../class_m_q_unifiedsensor.html#abffef8657174bb33d51ad3f66af8bc70',1,'MQUnifiedsensor']]],
   ['_5fsensor_5fvolt_13',['_sensor_volt',['../class_m_q_unifiedsensor.html#a76fbd1df68ff2429448550c1143d63c6',1,'MQUnifiedsensor']]],
   ['_5ftype_14',['_type',['../class_m_q_unifiedsensor.html#a46df65d59f4d5f54487e4c6a8cd5c3a5',1,'MQUnifiedsensor']]],
-  ['_5fvolt_5fresolution_15',['_VOLT_RESOLUTION',['../class_m_q_unifiedsensor.html#a1a9ac995d0bb3fb50fa777897cfd14f3',1,'MQUnifiedsensor']]]
+  ['_5fvolt_5fresolution_15',['_VOLT_RESOLUTION',['../class_m_q_unifiedsensor.html#a892c4a3e4da23ab09186c785decd8f6e',1,'MQUnifiedsensor']]]
 ];
