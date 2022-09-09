@@ -5,7 +5,7 @@ var indexSectionsWithContent =
   2: "cmrs",
   3: "bcdgimrsuv",
   4: "_adnr",
-  5: "cm"
+  5: "cs"
 };
 
 var indexSectionNames =

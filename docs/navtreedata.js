@@ -25,14 +25,8 @@
 var NAVTREE =
 [
   [ "MQ-X Arduino Library", "index.html", [
+    [ "Soldered MQ-X Gas Sensor Arduino Library", "index.html", null ],
     [ "Contributor Covenant Code of Conduct", "md_src_libs__m_q_unifiedsensor__c_o_d_e__o_f__c_o_n_d_u_c_t.html", [
-      [ "Repository Contents", "index.html#autotoc_md1", null ],
-      [ "Hardware design", "index.html#autotoc_md2", null ],
-      [ "Documentation", "index.html#autotoc_md3", null ],
-      [ "Board compatibility", "index.html#autotoc_md4", null ],
-      [ "About Soldered", "index.html#autotoc_md5", null ],
-      [ "Original source", "index.html#autotoc_md6", null ],
-      [ "Open-source license", "index.html#autotoc_md7", null ],
       [ "Our Pledge", "md_src_libs__m_q_unifiedsensor__c_o_d_e__o_f__c_o_n_d_u_c_t.html#autotoc_md9", null ],
       [ "Our Standards", "md_src_libs__m_q_unifiedsensor__c_o_d_e__o_f__c_o_n_d_u_c_t.html#autotoc_md10", null ],
       [ "Our Responsibilities", "md_src_libs__m_q_unifiedsensor__c_o_d_e__o_f__c_o_n_d_u_c_t.html#autotoc_md11", null ],

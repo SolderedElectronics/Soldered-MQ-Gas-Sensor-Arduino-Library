@@ -9,5 +9,6 @@ var searchData=
   ['setregressionmethod_6',['setRegressionMethod',['../class_m_q_unifiedsensor.html#a611341ddfd805c0a27d6ec11c2f35c28',1,'MQUnifiedsensor']]],
   ['setrl_7',['setRL',['../class_m_q_unifiedsensor.html#aa21040f35da35ea213a060b3450f479e',1,'MQUnifiedsensor']]],
   ['setvoltresolution_8',['setVoltResolution',['../class_m_q_unifiedsensor.html#ae635ae08fd77479c804c67ec57028f7e',1,'MQUnifiedsensor']]],
-  ['stringtofloat_9',['stringTofloat',['../class_m_q_unifiedsensor.html#a9eb2ad1f3fe879715e9ac9b406a89576',1,'MQUnifiedsensor']]]
+  ['soldered_20mq_2dx_20gas_20sensor_20arduino_20library_9',['Soldered MQ-X Gas Sensor Arduino Library',['../index.html',1,'']]],
+  ['stringtofloat_10',['stringTofloat',['../class_m_q_unifiedsensor.html#a9eb2ad1f3fe879715e9ac9b406a89576',1,'MQUnifiedsensor']]]
 ];
