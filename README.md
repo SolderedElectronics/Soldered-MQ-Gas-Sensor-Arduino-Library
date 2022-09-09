@@ -33,7 +33,7 @@
 | [MQ138 sensor breakout board with easyC](https://www.solde.red/333128)                                                            |
 | [MQ214 sensor breakout board with easyC](https://www.solde.red/333129)                                                            |
 
-MQ-X Gas Sensors Arduino Library soon to be compliant to [easyC ecosystem](https://www.soldered.com/easyC). 
+MQ-X Gas Sensors Arduino Library is compliant to [easyC ecosystem](https://www.soldered.com/easyC). 
 
 ### Repository Contents
 - **/src** - source files for the library (.h & .cpp)
@@ -45,7 +45,7 @@ You can find hardware design for this board in MQ-X Soldered Library hardware re
 
 ### Documentation
 
-Access Arduino library documentation [here](https://e-radionicacom.github.io/Soldered-MQ-Sensor-Arduino-Library/).
+Access Arduino library documentation [here](https://e-radionicacom.github.io/Soldered-MQ-Gas-Sensor-Arduino-Library/).
 
 - Tutorial for using the MQ-X Sensor Soldered board
 - Installing an Arduino library
