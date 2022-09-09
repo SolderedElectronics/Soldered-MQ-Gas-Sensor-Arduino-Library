@@ -1,4 +1,4 @@
-# MQ-X Arduino library
+# Soldered MQ-X Gas Sensor Arduino Library
 
 [![Make docs and publish to GitHub Pages](https://github.com/e-radionicacom/Soldered-MQ-Sensor-Arduino-Library/actions/workflows/make_docs.yml/badge.svg?branch=dev)](https://github.com/e-radionicacom/Soldered-MQ-Sensor-Arduino-Library/actions/workflows/make_docs.yml)
 
