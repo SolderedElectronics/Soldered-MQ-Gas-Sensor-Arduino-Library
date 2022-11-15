@@ -266,7 +266,7 @@ OPIS
 | :---------------------------------------------------------------------------------------------: |
 | [Methane, Natural gas sensor MQ214 breakout with easyC](https://www.solde.red/333129)                     
 
-OPIS                                    |
+OPIS
 
 ### Repository Contents
 - **/src** - source files for the library (.h & .cpp)
