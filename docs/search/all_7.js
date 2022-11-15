@@ -16,7 +16,8 @@ var searchData=
   ['mq8_13',['MQ8',['../class_m_q8.html',1,'MQ8'],['../class_m_q8.html#a97335cd862a82178f6910038adcd7891',1,'MQ8::MQ8()']]],
   ['mq9_14',['MQ9',['../class_m_q9.html',1,'MQ9'],['../class_m_q9.html#a2e372066e8cf3616f3dedfe9aba1fe74',1,'MQ9::MQ9()']]],
   ['mq_5fsensor_15',['MQ_Sensor',['../class_m_q___sensor.html',1,'MQ_Sensor'],['../class_m_q___sensor.html#ad2d502cb9c7bacc6e716d586c4a5b4d0',1,'MQ_Sensor::MQ_Sensor()']]],
-  ['mqunifiedsensor_16',['MQUnifiedsensor',['../class_m_q_unifiedsensor.html',1,'MQUnifiedsensor'],['../class_m_q_unifiedsensor.html#a17f46b3007746736498c0946ddc6517f',1,'MQUnifiedsensor::MQUnifiedsensor()']]],
+  ['mqunifiedsensor_16',['MQUnifiedsensor',['../class_m_q_unifiedsensor.html#a17f46b3007746736498c0946ddc6517f',1,'MQUnifiedsensor::MQUnifiedsensor()'],['../class_m_q_unifiedsensor.html',1,'MQUnifiedsensor']]],
   ['mqunifiedsensor_2ecpp_17',['MQUnifiedsensor.cpp',['../_m_q_unifiedsensor_8cpp.html',1,'']]],
-  ['mqunifiedsensor_2eh_18',['MQUnifiedsensor.h',['../_m_q_unifiedsensor_8h.html',1,'']]]
+  ['mqunifiedsensor_2eh_18',['MQUnifiedsensor.h',['../_m_q_unifiedsensor_8h.html',1,'']]],
+  ['mqx_20gas_20sensor_20arduino_20library_19',['MQX Gas Sensor Arduino library',['../index.html',1,'']]]
 ];
