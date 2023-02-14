@@ -25,9 +25,7 @@
 var NAVTREE =
 [
   [ "MQ-X Arduino Library", "index.html", [
-    [ "MQX Gas Sensor Arduino library", "index.html", [
-      [ "Have fun!", "index.html#autotoc_md8", null ]
-    ] ],
+    [ "MQX Gas Sensor Arduino library", "index.html", "index" ],
     [ "Contributor Covenant Code of Conduct", "md_src_libs__m_q_unifiedsensor__c_o_d_e__o_f__c_o_n_d_u_c_t.html", [
       [ "Our Pledge", "md_src_libs__m_q_unifiedsensor__c_o_d_e__o_f__c_o_n_d_u_c_t.html#autotoc_md10", null ],
       [ "Our Standards", "md_src_libs__m_q_unifiedsensor__c_o_d_e__o_f__c_o_n_d_u_c_t.html#autotoc_md11", null ],
