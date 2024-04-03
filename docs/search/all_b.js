@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['update_0',['update',['../class_m_q_unifiedsensor.html#a7cd72aa26c7bfc48bed867ae638584da',1,'MQUnifiedsensor']]]
+  ['hardware_20design_0',['Hardware design',['../index.html#autotoc_md2',1,'']]],
+  ['have_20fun_1',['Have fun!',['../index.html#autotoc_md8',1,'']]]
 ];

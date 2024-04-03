@@ -1,19 +1,6 @@
 var searchData=
 [
-  ['_5fa_0',['_a',['../class_m_q_unifiedsensor.html#ac5147b079f001cb9a74d1e4a4c8d4048',1,'MQUnifiedsensor']]],
-  ['_5fadc_1',['_adc',['../class_m_q_unifiedsensor.html#a59b3afec0f3aeaa6a7b64f65e0f66e7b',1,'MQUnifiedsensor']]],
-  ['_5fadc_5fbit_5fresolution_2',['_ADC_Bit_Resolution',['../class_m_q_unifiedsensor.html#aead75f7146dd7c2b7e53e5e217b824b6',1,'MQUnifiedsensor']]],
-  ['_5fb_3',['_b',['../class_m_q_unifiedsensor.html#a0e0a11dfc17cf19f7fd335236062e923',1,'MQUnifiedsensor']]],
-  ['_5ffirstflag_4',['_firstFlag',['../class_m_q_unifiedsensor.html#ae2848ec67415ea835197e11f0fc2a4d7',1,'MQUnifiedsensor']]],
-  ['_5fpin_5',['_pin',['../class_m_q_unifiedsensor.html#aea2c9b0cdafea5ea57edb338afbf2459',1,'MQUnifiedsensor']]],
-  ['_5fplaca_6',['_placa',['../class_m_q_unifiedsensor.html#a63be436475ff45b49b69622f66bcef2c',1,'MQUnifiedsensor']]],
-  ['_5fppm_7',['_PPM',['../class_m_q_unifiedsensor.html#a8d92d4b8bd6792ba59c7a566dde2a9d8',1,'MQUnifiedsensor']]],
-  ['_5fr0_8',['_R0',['../class_m_q_unifiedsensor.html#acd2d5c62b98490ed0fc45c9a2e14c42d',1,'MQUnifiedsensor']]],
-  ['_5fratio_9',['_ratio',['../class_m_q_unifiedsensor.html#ab21c86c2319d6e555527af93a828cd20',1,'MQUnifiedsensor']]],
-  ['_5fregressionmethod_10',['_regressionMethod',['../class_m_q_unifiedsensor.html#a7ca35341a982ccf7d782266f7422c75b',1,'MQUnifiedsensor']]],
-  ['_5frl_11',['_RL',['../class_m_q_unifiedsensor.html#abad8cfc4c659844f7ee656df1c516165',1,'MQUnifiedsensor']]],
-  ['_5frs_5fcalc_12',['_RS_Calc',['../class_m_q_unifiedsensor.html#abffef8657174bb33d51ad3f66af8bc70',1,'MQUnifiedsensor']]],
-  ['_5fsensor_5fvolt_13',['_sensor_volt',['../class_m_q_unifiedsensor.html#a76fbd1df68ff2429448550c1143d63c6',1,'MQUnifiedsensor']]],
-  ['_5ftype_14',['_type',['../class_m_q_unifiedsensor.html#a46df65d59f4d5f54487e4c6a8cd5c3a5',1,'MQUnifiedsensor']]],
-  ['_5fvolt_5fresolution_15',['_VOLT_RESOLUTION',['../class_m_q_unifiedsensor.html#a892c4a3e4da23ab09186c785decd8f6e',1,'MQUnifiedsensor']]]
+  ['0_2004_202020_0',['User Manual (v2.0) 04.2020',['..//github/workspace/gh-pages/src/libs/MQUnifiedsensor/README.md#autotoc_md32',1,'']]],
+  ['0_2012_202019_1',['User Manual (v1.0) 12.2019',['..//github/workspace/gh-pages/src/libs/MQUnifiedsensor/README.md#autotoc_md31',1,'']]],
+  ['04_202020_2',['User Manual (v2.0) 04.2020',['..//github/workspace/gh-pages/src/libs/MQUnifiedsensor/README.md#autotoc_md32',1,'']]]
 ];

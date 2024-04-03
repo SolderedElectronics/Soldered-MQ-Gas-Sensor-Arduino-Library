@@ -26,17 +26,17 @@ var NAVTREE =
 [
   [ "MQ-X Arduino Library", "index.html", [
     [ "MQX Gas Sensor Arduino library", "index.html", "index" ],
-    [ "Contributor Covenant Code of Conduct", "md_src_libs__m_q_unifiedsensor__c_o_d_e__o_f__c_o_n_d_u_c_t.html", [
-      [ "Our Pledge", "md_src_libs__m_q_unifiedsensor__c_o_d_e__o_f__c_o_n_d_u_c_t.html#autotoc_md10", null ],
-      [ "Our Standards", "md_src_libs__m_q_unifiedsensor__c_o_d_e__o_f__c_o_n_d_u_c_t.html#autotoc_md11", null ],
-      [ "Our Responsibilities", "md_src_libs__m_q_unifiedsensor__c_o_d_e__o_f__c_o_n_d_u_c_t.html#autotoc_md12", null ],
-      [ "Scope", "md_src_libs__m_q_unifiedsensor__c_o_d_e__o_f__c_o_n_d_u_c_t.html#autotoc_md13", null ],
-      [ "Enforcement", "md_src_libs__m_q_unifiedsensor__c_o_d_e__o_f__c_o_n_d_u_c_t.html#autotoc_md14", null ],
-      [ "Attribution", "md_src_libs__m_q_unifiedsensor__c_o_d_e__o_f__c_o_n_d_u_c_t.html#autotoc_md15", null ]
+    [ "Contributor Covenant Code of Conduct", "md_src_2libs_2_m_q_unifiedsensor_2_c_o_d_e___o_f___c_o_n_d_u_c_t.html", [
+      [ "Our Pledge", "md_src_2libs_2_m_q_unifiedsensor_2_c_o_d_e___o_f___c_o_n_d_u_c_t.html#autotoc_md10", null ],
+      [ "Our Standards", "md_src_2libs_2_m_q_unifiedsensor_2_c_o_d_e___o_f___c_o_n_d_u_c_t.html#autotoc_md11", null ],
+      [ "Our Responsibilities", "md_src_2libs_2_m_q_unifiedsensor_2_c_o_d_e___o_f___c_o_n_d_u_c_t.html#autotoc_md12", null ],
+      [ "Scope", "md_src_2libs_2_m_q_unifiedsensor_2_c_o_d_e___o_f___c_o_n_d_u_c_t.html#autotoc_md13", null ],
+      [ "Enforcement", "md_src_2libs_2_m_q_unifiedsensor_2_c_o_d_e___o_f___c_o_n_d_u_c_t.html#autotoc_md14", null ],
+      [ "Attribution", "md_src_2libs_2_m_q_unifiedsensor_2_c_o_d_e___o_f___c_o_n_d_u_c_t.html#autotoc_md15", null ]
     ] ],
-    [ "Contributing", "md_src_libs__m_q_unifiedsensor__c_o_n_t_r_i_b_u_t_i_n_g.html", [
-      [ "Pull Request Process", "md_src_libs__m_q_unifiedsensor__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md17", null ],
-      [ "Review of pull request", "md_src_libs__m_q_unifiedsensor__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md18", null ]
+    [ "Contributing", "md_src_2libs_2_m_q_unifiedsensor_2_c_o_n_t_r_i_b_u_t_i_n_g.html", [
+      [ "Pull Request Process", "md_src_2libs_2_m_q_unifiedsensor_2_c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md17", null ],
+      [ "Review of pull request", "md_src_2libs_2_m_q_unifiedsensor_2_c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md18", null ]
     ] ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
