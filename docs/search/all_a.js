@@ -8,5 +8,6 @@ var searchData=
   ['getrl_5',['getRL',['../class_m_q_unifiedsensor.html#ac9d0fc493a8bfc861b607a1a76af86e5',1,'MQUnifiedsensor']]],
   ['getting_20started_6',['Getting Started',['..//github/workspace/gh-pages/src/libs/MQUnifiedsensor/README.md#autotoc_md21',1,'']]],
   ['getvoltage_7',['getVoltage',['../class_m_q_unifiedsensor.html#a02daad319286ab07aa54015d161acc0f',1,'MQUnifiedsensor']]],
-  ['getvoltresolution_8',['getVoltResolution',['../class_m_q_unifiedsensor.html#a300a0982a30ea94fab92ffcc2c841154',1,'MQUnifiedsensor']]]
+  ['getvoltresolution_8',['getVoltResolution',['../class_m_q_unifiedsensor.html#a300a0982a30ea94fab92ffcc2c841154',1,'MQUnifiedsensor']]],
+  ['graph_9',['Graph',['..//github/workspace/gh-pages/src/libs/MQUnifiedsensor/README.md#autotoc_md27',1,'']]]
 ];
