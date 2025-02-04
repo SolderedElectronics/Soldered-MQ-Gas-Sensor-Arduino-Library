@@ -18,7 +18,7 @@ class MQUnifiedsensor
                     String type = "CUSTOM MQ");
 
     // Functions to set values
-    void init(int addr);
+    void init(int addr, TwoWire *pWire);
     void update();
     void setR0(float R0 = 10);
     void setRL(float RL = 10);
@@ -59,6 +59,7 @@ class MQUnifiedsensor
 
     float _adc, _a, _b, _sensor_volt;
     float _R0, RS_air, _ratio, _PPM, _RS_Calc;
+    TwoWire* _pWire;
 
     char _type[6];
     char _placa[20];
