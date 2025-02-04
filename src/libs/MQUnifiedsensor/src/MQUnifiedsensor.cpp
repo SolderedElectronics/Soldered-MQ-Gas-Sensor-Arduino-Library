@@ -10,11 +10,11 @@ MQUnifiedsensor::MQUnifiedsensor(int pin, String Placa, float Voltage_Resolution
     this->_VOLT_RESOLUTION = Voltage_Resolution;
     this->_ADC_Bit_Resolution = ADC_Bit_Resolution;
 }
-void MQUnifiedsensor::init(int _addr)
+void MQUnifiedsensor::init(int _addr, TwoWire *pWire)
 {
     addr = _addr;
-
-    Wire.begin();
+    _pWire = pWire;
+    _pWire->begin();
 }
 void MQUnifiedsensor::setA(float a)
 {
@@ -166,9 +166,9 @@ void MQUnifiedsensor::update()
     else
     {
         uint8_t temp[2];
-        Wire.requestFrom(addr, 2);
-        temp[0] = Wire.read();
-        temp[1] = Wire.read();
+        _pWire->requestFrom(addr, (byte) 2);
+        temp[0] = _pWire->read();
+        temp[1] = _pWire->read();
         _adc = (temp[0] | temp[1] << 8);
         _sensor_volt = _adc / 1024.0 * _VOLT_RESOLUTION;
     }

@@ -49,7 +49,7 @@ class MQ_Sensor : public MQUnifiedsensor
         }
     }
 
-    void begin(int _addr = 0x00);
+    void begin(int _addr = 0x00, TwoWire *pWire = &Wire);
 
     bool digitalRead();
 

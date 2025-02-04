@@ -14,11 +14,11 @@
 /**
  * @brief                   Overloaded function for virtual in base class to initialize sensor specific.
  */
-void MQ_Sensor::begin(int _addr)
+void MQ_Sensor::begin(int _addr, TwoWire *pWire)
 {
     if (_addr)
     {
-        init(_addr);
+        init(_addr, pWire);
     }
     else
     {
