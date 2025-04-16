@@ -4,6 +4,7 @@ var _m_q__sensor__s_o_l_d_e_r_e_d_8h =
     [ "MQ2", "class_m_q2.html", "class_m_q2" ],
     [ "MQ3", "class_m_q3.html", "class_m_q3" ],
     [ "MQ4", "class_m_q4.html", "class_m_q4" ],
+    [ "MQ5", "class_m_q5.html", "class_m_q5" ],
     [ "MQ6", "class_m_q6.html", "class_m_q6" ],
     [ "MQ7", "class_m_q7.html", "class_m_q7" ],
     [ "MQ8", "class_m_q8.html", "class_m_q8" ],

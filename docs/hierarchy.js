@@ -11,10 +11,12 @@ var hierarchy =
         [ "MQ214", "class_m_q214.html", null ],
         [ "MQ3", "class_m_q3.html", null ],
         [ "MQ4", "class_m_q4.html", null ],
+        [ "MQ5", "class_m_q5.html", null ],
         [ "MQ6", "class_m_q6.html", null ],
         [ "MQ7", "class_m_q7.html", null ],
         [ "MQ8", "class_m_q8.html", null ],
         [ "MQ9", "class_m_q9.html", null ]
       ] ]
-    ] ]
+    ] ],
+    [ "sensorType", "structsensor_type.html", null ]
 ];

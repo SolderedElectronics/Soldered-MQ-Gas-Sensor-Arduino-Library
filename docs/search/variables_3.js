@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['native_0',['native',['../class_m_q_unifiedsensor.html#a8d3a952ad95b9dc8a1ac88bda4515450',1,'MQUnifiedsensor']]]
+  ['coefficient_5fa_0',['coefficient_a',['../structsensor_type.html#a117a1aaff1098281ec1663d9861c0386',1,'sensorType']]],
+  ['coefficient_5fb_1',['coefficient_b',['../structsensor_type.html#ab5e1365cacade0faf6557e4658296991',1,'sensorType']]]
 ];

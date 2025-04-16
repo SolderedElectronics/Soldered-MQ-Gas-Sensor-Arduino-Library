@@ -1,4 +1,4 @@
 var class_m_q2 =
 [
-    [ "MQ2", "class_m_q2.html#ade0809f54f7807c4f1733e29a626d5af", null ]
+    [ "MQ2", "class_m_q2.html#a1cc014805fbd7be912903d528c8d8642", null ]
 ];
