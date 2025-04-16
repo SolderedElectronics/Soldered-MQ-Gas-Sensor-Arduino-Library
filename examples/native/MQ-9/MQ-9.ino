@@ -1,27 +1,20 @@
-/*
-  MQUnifiedsensor Library - reading an mq9
-
-  Demonstrates the use a mq9 sensor.
-  Library originally added 01 may 2019
-  by Miguel A Califa, Yersson Carrillo, Ghiordy Contreras, Mario Rodriguez
-
-  Added example
-  modified 23 May 2019
-  by Miguel Califa
-
-  Updated library usage
-  modified 26 March 2020
-  by Miguel Califa
-
-  Example is modified by Soldered.com
-
-  Wiring:
-  https://github.com/miguel5612/MQSensorsLib_Docs/blob/master/static/img/MQ_Arduino.PNG
-
-
- This example code is in the public domain.
-
-*/
+/**
+ **************************************************
+ *
+ * @file        MQ-9.ino
+ * @brief       Example for reading gas measurements from MQ9 sensor (native)
+ *
+ *              To successfully run the sketch:
+ *              - Connect the breakout to your Dasduino board via the I2C pins
+ *              - Run the sketch and open serial monitor at 115200 baud!
+ *
+ *              Dasduino Core: www.solde.red/333037
+ *              Dasduino Connect: www.solde.red/333034
+ *              Dasduino ConnectPlus: www.solde.red/333033
+ *
+ * @authors     Josip Šimun @ soldered.com
+ * Special thanks to Miguel Califa for example template
+ ***************************************************/
 
 // Include the library
 #include "MQ-Sensor-SOLDERED.h"

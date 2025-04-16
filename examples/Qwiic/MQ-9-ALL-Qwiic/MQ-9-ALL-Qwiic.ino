@@ -1,11 +1,11 @@
 /**
  **************************************************
  *
- * @file        MQ-2.ino
- * @brief       Example for reading gas measurements from MQ2 sensor (native)
+ * @file        MQ-9-Qwiic.ino
+ * @brief       Example for reading all gas measurements from MQ9 sensor (Qwiic)
  *
  *              To successfully run the sketch:
- *              - Connect the breakout to your Dasduino board via the I2C pins
+ *              - Connect the breakout to your Dasduino board via easyC
  *              - Run the sketch and open serial monitor at 115200 baud!
  *
  *              Dasduino Core: www.solde.red/333037
@@ -17,30 +17,22 @@
  ***************************************************/
 
 // Include the library
-#include "MQ-Sensor-SOLDERED.h"
-
-// Predefined microcontroller pins for AO sensor pin (microcontroller dependent)
-// You can change the pin to suit your setup.
-#if defined(__AVR__) || defined(STM32)
-#define SENSOR_ANALOG_PIN A1
-#elif defined(ESP32)
-#define SENSOR_ANALOG_PIN 34
-#else
-#define SENSOR_ANALOG_PIN 5
-#endif
-
-// Create an instance of the object
-MQ2 mq2(SENSOR_ANALOG_PIN);
+#include <MQ-Sensor-SOLDERED.h>
 
 #define numOfCalibrations 10 //How many readings of R0 we take to get average measurement
+
+// Create an instance of the sensor object
+MQ9 mq9;
+
+float LPG,CO,CH4; //Values we will read
 
 void setup()
 {
     // Init the serial port communication at 115200 bauds. It's used to print out measured data.
     Serial.begin(115200);
 
-     // Initialize the sensor
-     mq2.begin();
+
+    mq9.begin(0x30); 
 
     /*****************************  MQ Calibration ********************************************/
     // Explanation:
@@ -49,7 +41,7 @@ void setup()
     // This routine not need to execute on every restart, you can load your R0 into flash memory and read it on startup
     
     Serial.print("Calibrating please wait.");
-    bool calibrationResult=mq2.calibrateSensor(numOfCalibrations);
+    bool calibrationResult=mq9.calibrateSensor(numOfCalibrations);
     if(!calibrationResult) //Check if the sensor was properly calibrated
     {
       Serial.println("There was an error reading the sensor, check connection and try again");
@@ -63,7 +55,38 @@ void setup()
 
 void loop()
 {
-  mq2.update();      // Update data, read voltage level from sensor
-  Serial.println("LPG: " + String(mq2.readSensor())+"ppm"); // Print the readings to the serial monitor
-  delay(500);        // Sampling frequency
+  mq9.update();      // Update data, read voltage level from sensor
+  
+  // Since the MQ9 sensors gives accurate readings for the gasses it can detect, we will read all
+  // of their values
+
+  // We have to define the a and b constants for eachg curve of each gas
+
+  /*
+    Exponential regression:
+    GAS     | a      | b
+    LPG     | 1000.5 | -2.186
+    CH4     | 4269.6 | -2.648
+    CO      | 599.65 | -2.244
+  */
+    
+  //LPG
+  mq9.setA(1000.5);
+  mq9.setB(-2.186);
+  LPG=mq9.readSensor();
+
+  //CH4
+  mq9.setA(4269.6);
+  mq9.setB(-2.648);
+  CH4=mq9.readSensor();
+
+  //CO
+  mq9.setA(599.65);
+  mq9.setB(-2.244);
+  CO=mq9.readSensor();
+
+  //Printing all values in form | LPG | CH4 | CO | in ppm
+  Serial.println("| "+String(LPG)+" | "+String(CH4)+" | "+String(CO)+" |");
+  
+  delay(1000);        // Sampling frequency
 }

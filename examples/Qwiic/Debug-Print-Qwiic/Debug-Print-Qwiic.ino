@@ -1,8 +1,8 @@
 /**
  **************************************************
  *
- * @file        MQ-2.ino
- * @brief       Example for reading gas measurements from MQ2 sensor (native)
+ * @file        Debug-Print-Qwiic.ino
+ * @brief       Example of using the debug print library function
  *
  *              To successfully run the sketch:
  *              - Connect the breakout to your Dasduino board via the I2C pins
@@ -15,32 +15,26 @@
  * @authors     Josip Šimun @ soldered.com
  * Special thanks to Miguel Califa for example template
  ***************************************************/
-
 // Include the library
-#include "MQ-Sensor-SOLDERED.h"
-
-// Predefined microcontroller pins for AO sensor pin (microcontroller dependent)
-// You can change the pin to suit your setup.
-#if defined(__AVR__) || defined(STM32)
-#define SENSOR_ANALOG_PIN A1
-#elif defined(ESP32)
-#define SENSOR_ANALOG_PIN 34
-#else
-#define SENSOR_ANALOG_PIN 5
-#endif
-
-// Create an instance of the object
-MQ2 mq2(SENSOR_ANALOG_PIN);
+#include <MQ-Sensor-SOLDERED.h>
 
 #define numOfCalibrations 10 //How many readings of R0 we take to get average measurement
+
+//Create an instance of the sensor object
+MQ131 mq131; 
 
 void setup()
 {
     // Init the serial port communication at 115200 bauds. It's used to print out measured data.
     Serial.begin(115200);
 
-     // Initialize the sensor
-     mq2.begin();
+    //Initialize I2C connection with sensor, if it fails inform user
+    if(!mq131.begin(0x30))
+    {
+      Serial.println("Failed to initialize I2C communication, check wiring");
+      while(1)
+      {}
+    }
 
     /*****************************  MQ Calibration ********************************************/
     // Explanation:
@@ -49,7 +43,7 @@ void setup()
     // This routine not need to execute on every restart, you can load your R0 into flash memory and read it on startup
     
     Serial.print("Calibrating please wait.");
-    bool calibrationResult=mq2.calibrateSensor(numOfCalibrations);
+    bool calibrationResult=mq131.calibrateSensor(numOfCalibrations);
     if(!calibrationResult) //Check if the sensor was properly calibrated
     {
       Serial.println("There was an error reading the sensor, check connection and try again");
@@ -63,7 +57,11 @@ void setup()
 
 void loop()
 {
-  mq2.update();      // Update data, read voltage level from sensor
-  Serial.println("LPG: " + String(mq2.readSensor())+"ppm"); // Print the readings to the serial monitor
+  mq131.update();      // Update data, read voltage level from sensor
+  /*
+  Prints all values form and about the sensor, used for calibration and debug purposes, format is:
+  |ADC_In | Equation_V_ADC | Voltage_ADC | Equation_RS  | Resistance_RS | EQ_Ratio | Ratio (RS/R0) | Equation_PPM | PPM |
+  */
+  mq131.serialDebug(); 
   delay(500);        // Sampling frequency
 }

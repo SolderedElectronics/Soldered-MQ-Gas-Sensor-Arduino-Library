@@ -1,8 +1,8 @@
 /**
  **************************************************
  *
- * @file        MQ-2.ino
- * @brief       Example for reading gas measurements from MQ2 sensor (native)
+ * @file        MQ-137.ino
+ * @brief       Example for reading gas measurements from MQ137 sensor (native)
  *
  *              To successfully run the sketch:
  *              - Connect the breakout to your Dasduino board via the I2C pins
@@ -30,7 +30,7 @@
 #endif
 
 // Create an instance of the object
-MQ2 mq2(SENSOR_ANALOG_PIN);
+MQ137 mq137(SENSOR_ANALOG_PIN);
 
 #define numOfCalibrations 10 //How many readings of R0 we take to get average measurement
 
@@ -40,8 +40,7 @@ void setup()
     Serial.begin(115200);
 
      // Initialize the sensor
-     mq2.begin();
-
+     mq137.begin();
     /*****************************  MQ Calibration ********************************************/
     // Explanation:
     // In this routine the sensor will measure the resistance of the sensor after it has been pre-heated for 48h
@@ -49,7 +48,7 @@ void setup()
     // This routine not need to execute on every restart, you can load your R0 into flash memory and read it on startup
     
     Serial.print("Calibrating please wait.");
-    bool calibrationResult=mq2.calibrateSensor(numOfCalibrations);
+    bool calibrationResult=mq137.calibrateSensor(numOfCalibrations);
     if(!calibrationResult) //Check if the sensor was properly calibrated
     {
       Serial.println("There was an error reading the sensor, check connection and try again");
@@ -63,7 +62,7 @@ void setup()
 
 void loop()
 {
-  mq2.update();      // Update data, read voltage level from sensor
-  Serial.println("LPG: " + String(mq2.readSensor())+"ppm"); // Print the readings to the serial monitor
+  mq137.update();      // Update data, read voltage level from sensor
+  Serial.println("NH3: " + String(mq137.readSensor())+"ppm"); // Print the readings to the serial monitor
   delay(500);        // Sampling frequency
 }
