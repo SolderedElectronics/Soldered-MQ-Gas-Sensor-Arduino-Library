@@ -1,27 +1,20 @@
-/*
-  MQUnifiedsensor Library - reading an mq9
-
-  Demonstrates the use a mq9 sensor.
-  Library originally added 01 may 2019
-  by Miguel A Califa, Yersson Carrillo, Ghiordy Contreras, Mario Rodriguez
-
-  Added example
-  modified 23 May 2019
-  by Miguel Califa
-
-  Updated library usage
-  modified 26 March 2020
-  by Miguel Califa
-
-  Example is modified by Soldered.com
-
-  Wiring:
-  https://github.com/miguel5612/MQSensorsLib_Docs/blob/master/static/img/MQ_Arduino.PNG
-
-
- This example code is in the public domain.
-
-*/
+/**
+ **************************************************
+ *
+ * @file        MQ-9.ino
+ * @brief       Example for reading all supported gas measurements from MQ9 sensor (native)
+ *
+ *              To successfully run the sketch:
+ *              - Connect the breakout to your Dasduino board via the I2C pins
+ *              - Run the sketch and open serial monitor at 115200 baud!
+ *
+ *              Dasduino Core: www.solde.red/333037
+ *              Dasduino Connect: www.solde.red/333034
+ *              Dasduino ConnectPlus: www.solde.red/333033
+ *
+ * @authors     Josip Šimun @ soldered.com
+ * Special thanks to Miguel Califa for example template
+ ***************************************************/
 
 // Include the library
 #include "MQ-Sensor-SOLDERED.h"
@@ -36,101 +29,74 @@
 #define SENSOR_ANALOG_PIN 5
 #endif
 
-#define RatioMQ9CleanAir (9.6) // RS / R0 = 60 ppm
+#define numOfCalibrations 10 //How many readings of R0 we take to get average measurement
 
-// Create library object for this specific sensor.
-MQ2 mq9(SENSOR_ANALOG_PIN);
+// Create an instance of the object
+MQ9 mq9(SENSOR_ANALOG_PIN);
+
+
+float LPG,CO,CH4; //Values we will read
 
 void setup()
 {
     // Init the serial port communication at 115200 bauds. It's used to print out measured data.
     Serial.begin(115200);
 
-    // Set math model to calculate the PPM concentration and the value of constants
-    mq9.setRegressionMethod(1); //_PPM =  a*ratio^b
+    mq9.begin(); 
 
-
-    /*****************************  MQ Init ********************************************/
-    // Remarks: Configure the pin of arduino as input.
-    /************************************************************************************/
-    mq9.begin(); // If you have easyC version of this sensor
-                 // you should add here I2C address of sensor
-                 // which is 0x30 by default and can be changed
-                 // by onboard switches labeled with ADDR
-    /*
-      //If the RL value is different from 10K please assign your RL value with the following method:
-      mq9.setRL(10);
-    */
-    /*****************************  MQ CAlibration ********************************************/
+    /*****************************  MQ Calibration ********************************************/
     // Explanation:
-    // In this routine the sensor will measure the resistance of the sensor supposing before was pre-heated
-    // and now is on clean air (Calibration conditions), and it will setup R0 value.
-    // We recomend execute this routine only on setup or on the laboratory and save on the eeprom of your arduino
-    // This routine not need to execute to every restart, you can load your R0 if you know the value
-    // Acknowledgements: https://jayconsystems.com/blog/understanding-a-gas-sensor
+    // In this routine the sensor will measure the resistance of the sensor after it has been pre-heated for 48h
+    // and now is in a clean air enviorment, and it will setup the R0 value.
+    // This routine not need to execute on every restart, you can load your R0 into flash memory and read it on startup
+    
     Serial.print("Calibrating please wait.");
-    float calcR0 = 0;
-    for (int i = 1; i <= 10; i++)
+    bool calibrationResult=mq9.calibrateSensor(numOfCalibrations);
+    if(!calibrationResult) //Check if the sensor was properly calibrated
     {
-        mq9.update(); // Update data, the arduino will be read the voltage on the analog pin
-        calcR0 += mq9.calibrate(RatioMQ9CleanAir);
-        Serial.print(".");
+      Serial.println("There was an error reading the sensor, check connection and try again");
+      while(1)
+      {}
     }
-    mq9.setR0(calcR0 / 10);
-    Serial.println("  done!.");
+    Serial.print("Calibration done!");
 
-    if (isinf(calcR0))
-    {
-        Serial.println("Warning: Conection issue founded, R0 is infite (Open circuit detected) please check your "
-                       "wiring and supply");
-        while (1)
-            ;
-    }
-    if (calcR0 == 0)
-    {
-        Serial.println("Warning: Conection issue founded, R0 is zero (Analog pin with short circuit to ground) please "
-                       "check your wiring and supply");
-        while (1)
-            ;
-    }
-    /*****************************  MQ CAlibration ********************************************/
-    Serial.println("** Lectures from MQ-9 ****");
-    Serial.println("|    LPG   |  CH4 |   CO  |");
+    /*****************************  MQ Calibration ********************************************/
 }
 
 void loop()
 {
-    mq9.update(); // Update data, the arduino will be read the voltage on the analog pin
-    /*
+  mq9.update();      // Update data, read voltage level from sensor
+  
+  // Since the MQ9 sensors gives accurate readings for the gasses it can detect, we will read all
+  // of their values
+
+  // We have to define the a and b constants for eachg curve of each gas
+
+  /*
     Exponential regression:
     GAS     | a      | b
     LPG     | 1000.5 | -2.186
     CH4     | 4269.6 | -2.648
     CO      | 599.65 | -2.244
-    */
+  */
+    
+  //LPG
+  mq9.setA(1000.5);
+  mq9.setB(-2.186);
+  LPG=mq9.readSensor();
 
-    mq9.setA(1000.5);
-    mq9.setB(-2.186);             // Configurate the ecuation values to get LPG concentration
-    float LPG = mq9.readSensor(); // Sensor will read PPM concentration using the model and a and b values setted before
-                                  // or in the setup
+  //CH4
+  mq9.setA(4269.6);
+  mq9.setB(-2.648);
+  CH4=mq9.readSensor();
 
-    mq9.setA(4269.6);
-    mq9.setB(-2.648);             // Configurate the ecuation values to get LPG concentration
-    float CH4 = mq9.readSensor(); // Sensor will read PPM concentration using the model and a and b values setted before
-                                  // or in the setup
+  //CO
+  mq9.setA(599.65);
+  mq9.setB(-2.244);
+  CO=mq9.readSensor();
 
-    mq9.setA(599.65);
-    mq9.setB(-2.244);            // Configurate the ecuation values to get LPG concentration
-    float CO = mq9.readSensor(); // Sensor will read PPM concentration using the model and a and b values setted before
-                                 // or in the setup
-
-    Serial.print("|    ");
-    Serial.print(LPG);
-    Serial.print("    |    ");
-    Serial.print(CH4);
-    Serial.print("    |    ");
-    Serial.print(CO);
-    Serial.println("    |");
-
-    delay(500); // Sampling frequency
+  //Printing all values in form | LPG | CH4 | CO | in ppm
+  Serial.println("| "+String(LPG)+" | "+String(CH4)+" | "+String(CO)+" |");
+  
+  delay(1000);        // Sampling frequency
 }

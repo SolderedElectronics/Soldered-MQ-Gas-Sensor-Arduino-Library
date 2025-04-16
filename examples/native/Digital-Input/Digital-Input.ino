@@ -1,8 +1,8 @@
 /**
  **************************************************
  *
- * @file        Calibration.ino
- * @brief       Example for calibrating an MQ sensor indefinitely
+ * @file        Digital-Input.ino
+ * @brief       Example of using the digital pin to detect a high gas concentration
  *
  *              To successfully run the sketch:
  *              - Connect the breakout to your Dasduino board via the I2C pins
@@ -16,10 +16,7 @@
  * Special thanks to Miguel Califa for example template
  ***************************************************/
 
-// Include the library
 #include "MQ-Sensor-SOLDERED.h"
-
-unsigned long counter = 1;
 
 // Predefined microcontroller pins for AO sensor pin (microcontroller dependent)
 // You can change the pin to suit your setup.
@@ -31,33 +28,29 @@ unsigned long counter = 1;
 #define SENSOR_ANALOG_PIN 5
 #endif
 
-//Create an instance of the sensor object
-MQ135 mq135(SENSOR_ANALOG_PIN); 
+// DO of the sensor is connected to pin 2 of the microcontroller.
+#define SENSOR_DIGITAL_PIN 2
+
+// Create library object for this specific sensor.
+MQ135 mq135(SENSOR_ANALOG_PIN,SENSOR_DIGITAL_PIN); // Connect sensor to analog input A1, digital pin 2 for digitalRead
 
 void setup()
 {
     // Init the serial port communication at 115200 bauds. It's used to print out measured data.
     Serial.begin(115200);
-
-    // Initialize I2C communication with the sensor
-    mq135.begin(); 
-
-    Serial.println("MQ135 - Calibration");
-    Serial.println("Note - Make sure you are in a clean room and the sensor has been pre-heating for almost 24 hours");
-    Serial.println("Current calibration | R0 value");
 }
 
 void loop()
 {
-    mq135.update();
-    // Read the sensor and print to serial monitor
-    float lecture = mq135.calibrate(MQ135_config.Rs_R0_ratio);
-    // Print in serial monitor
-    Serial.print(counter);
-    Serial.print(" | ");
-    Serial.println(lecture);
-    // Increment counter
-    counter++;
-    // Wait to measure next sample
-    delay(400);
+    //
+    if (mq135.digitalRead())
+    {
+        Serial.println("Alarm high concentrations detected");
+    }
+    else
+    {
+        Serial.println("Status: Normal");
+    }
+
+    delay(1000);
 }
