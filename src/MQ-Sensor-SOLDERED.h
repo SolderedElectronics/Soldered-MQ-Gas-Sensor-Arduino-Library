@@ -36,7 +36,8 @@
 class MQ_Sensor : public MQUnifiedsensor
 {
   public:
-    MQ_Sensor(int _aPin, int _dPin, String type, sensorType sType) : MQUnifiedsensor(_aPin, "Arduino", VOLTAGE_RES, ADC_RES, type)
+    MQ_Sensor(int _aPin, int _dPin, String type, sensorType sType)
+        : MQUnifiedsensor(_aPin, "Arduino", VOLTAGE_RES, ADC_RES, type)
     {
         if (_aPin == -1)
         {
@@ -49,14 +50,14 @@ class MQ_Sensor : public MQUnifiedsensor
             aPin = _aPin;
             dPin = _dPin;
         }
-        sensor_type=sType;
+        sensor_type = sType;
     }
 
     void begin();
     void begin(sensorType configcustom);
     bool begin(int _addr);
     bool begin(int _addr, sensorType configcustom);
-    void setRegressionModel(const sensorType& type);
+    void setRegressionModel(const sensorType &type);
     bool calibrateSensor(int numOfCalibrations);
     bool digitalRead();
 
@@ -64,14 +65,12 @@ class MQ_Sensor : public MQUnifiedsensor
     void setConfiguration(sensorType &type);
     int aPin, dPin;
     sensorType sensor_type;
-
-
 };
 
 class MQ2 : public MQ_Sensor
 {
   public:
-    MQ2(int aPin = -1, int dPin = -1, sensorType sType=MQ2_config ) : MQ_Sensor(aPin, dPin, "MQ-2", sType)
+    MQ2(int aPin = -1, int dPin = -1, sensorType sType = MQ2_config) : MQ_Sensor(aPin, dPin, "MQ-2", sType)
     {
     }
 };
@@ -79,7 +78,7 @@ class MQ2 : public MQ_Sensor
 class MQ3 : public MQ_Sensor
 {
   public:
-    MQ3(int aPin = -1, int dPin = -1, sensorType sType=MQ3_config ) : MQ_Sensor(aPin, dPin, "MQ-3", sType)
+    MQ3(int aPin = -1, int dPin = -1, sensorType sType = MQ3_config) : MQ_Sensor(aPin, dPin, "MQ-3", sType)
     {
     }
 };
@@ -87,7 +86,7 @@ class MQ3 : public MQ_Sensor
 class MQ4 : public MQ_Sensor
 {
   public:
-    MQ4(int aPin = -1, int dPin = -1, sensorType sType=MQ4_config ) : MQ_Sensor(aPin, dPin, "MQ-4", sType)
+    MQ4(int aPin = -1, int dPin = -1, sensorType sType = MQ4_config) : MQ_Sensor(aPin, dPin, "MQ-4", sType)
     {
     }
 };
@@ -96,7 +95,7 @@ class MQ4 : public MQ_Sensor
 class MQ5 : public MQ_Sensor
 {
   public:
-    MQ5(int aPin = -1, int dPin = -1, sensorType sType=MQ5_config ) : MQ_Sensor(aPin, dPin, "MQ-5", sType)
+    MQ5(int aPin = -1, int dPin = -1, sensorType sType = MQ5_config) : MQ_Sensor(aPin, dPin, "MQ-5", sType)
     {
     }
 };
@@ -104,7 +103,7 @@ class MQ5 : public MQ_Sensor
 class MQ6 : public MQ_Sensor
 {
   public:
-    MQ6(int aPin = -1, int dPin = -1, sensorType sType=MQ6_config ) : MQ_Sensor(aPin, dPin, "MQ-6", sType)
+    MQ6(int aPin = -1, int dPin = -1, sensorType sType = MQ6_config) : MQ_Sensor(aPin, dPin, "MQ-6", sType)
     {
     }
 };
@@ -112,7 +111,7 @@ class MQ6 : public MQ_Sensor
 class MQ7 : public MQ_Sensor
 {
   public:
-    MQ7(int aPin = -1, int dPin = -1, sensorType sType=MQ7_config ) : MQ_Sensor(aPin, dPin, "MQ-7", sType)
+    MQ7(int aPin = -1, int dPin = -1, sensorType sType = MQ7_config) : MQ_Sensor(aPin, dPin, "MQ-7", sType)
     {
     }
 };
@@ -120,17 +119,18 @@ class MQ7 : public MQ_Sensor
 class MQ8 : public MQ_Sensor
 {
   public:
-    MQ8(int aPin = -1, int dPin = -1, sensorType sType=MQ8_config ) : MQ_Sensor(aPin, dPin, "MQ-8", sType)
+    MQ8(int aPin = -1, int dPin = -1, sensorType sType = MQ8_config) : MQ_Sensor(aPin, dPin, "MQ-8", sType)
     {
     }
-    private:
-      sensorType sensor_type;
+
+  private:
+    sensorType sensor_type;
 };
 
 class MQ9 : public MQ_Sensor
 {
   public:
-    MQ9(int aPin = -1, int dPin = -1, sensorType sType=MQ9_config ) : MQ_Sensor(aPin, dPin, "MQ-9", sType)
+    MQ9(int aPin = -1, int dPin = -1, sensorType sType = MQ9_config) : MQ_Sensor(aPin, dPin, "MQ-9", sType)
     {
     }
 };
@@ -138,7 +138,7 @@ class MQ9 : public MQ_Sensor
 class MQ131 : public MQ_Sensor
 {
   public:
-    MQ131(int aPin = -1, int dPin = -1, sensorType sType=MQ131_config ) : MQ_Sensor(aPin, dPin, "MQ-131", sType)
+    MQ131(int aPin = -1, int dPin = -1, sensorType sType = MQ131_config) : MQ_Sensor(aPin, dPin, "MQ-131", sType)
     {
     }
 };
@@ -146,7 +146,7 @@ class MQ131 : public MQ_Sensor
 class MQ135 : public MQ_Sensor
 {
   public:
-    MQ135(int aPin = -1, int dPin = -1, sensorType sType=MQ135_config ) : MQ_Sensor(aPin, dPin, "MQ-135", sType)
+    MQ135(int aPin = -1, int dPin = -1, sensorType sType = MQ135_config) : MQ_Sensor(aPin, dPin, "MQ-135", sType)
     {
     }
 };
@@ -154,7 +154,7 @@ class MQ135 : public MQ_Sensor
 class MQ136 : public MQ_Sensor
 {
   public:
-    MQ136(int aPin = -1, int dPin = -1, sensorType sType=Blank_config ) : MQ_Sensor(aPin, dPin, "MQ-136", sType)
+    MQ136(int aPin = -1, int dPin = -1, sensorType sType = Blank_config) : MQ_Sensor(aPin, dPin, "MQ-136", sType)
     {
     }
 };
@@ -162,7 +162,7 @@ class MQ136 : public MQ_Sensor
 class MQ137 : public MQ_Sensor
 {
   public:
-    MQ137(int aPin = -1, int dPin = -1, sensorType sType=MQ137_config ) : MQ_Sensor(aPin, dPin, "MQ-137", sType)
+    MQ137(int aPin = -1, int dPin = -1, sensorType sType = MQ137_config) : MQ_Sensor(aPin, dPin, "MQ-137", sType)
     {
     }
 };
@@ -170,7 +170,7 @@ class MQ137 : public MQ_Sensor
 class MQ138 : public MQ_Sensor
 {
   public:
-    MQ138(int aPin = -1, int dPin = -1, sensorType sType=MQ138_config ) : MQ_Sensor(aPin, dPin, "MQ-138", sType)
+    MQ138(int aPin = -1, int dPin = -1, sensorType sType = MQ138_config) : MQ_Sensor(aPin, dPin, "MQ-138", sType)
     {
     }
 };
@@ -178,7 +178,7 @@ class MQ138 : public MQ_Sensor
 class MQ214 : public MQ_Sensor
 {
   public:
-    MQ214(int aPin = -1, int dPin = -1, sensorType sType=Blank_config ) : MQ_Sensor(aPin, dPin, "MQ-214", sType)
+    MQ214(int aPin = -1, int dPin = -1, sensorType sType = Blank_config) : MQ_Sensor(aPin, dPin, "MQ-214", sType)
     {
     }
 };
