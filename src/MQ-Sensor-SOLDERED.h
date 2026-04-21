@@ -61,8 +61,8 @@ class MQ_Sensor : public MQUnifiedsensor
 
     void begin();
     void begin(sensorType configcustom);
-    bool begin(int _addr, TwoWire* i2c=&Wire);
-    bool begin(int _addr, TwoWire* i2c, sensorType configcustom);
+    bool begin(int _addr, TwoWire *i2c = &Wire);
+    bool begin(int _addr, TwoWire *i2c, sensorType configcustom);
     void setRegressionModel(const sensorType &type);
     bool calibrateSensor(int numOfCalibrations);
     bool digitalRead();
