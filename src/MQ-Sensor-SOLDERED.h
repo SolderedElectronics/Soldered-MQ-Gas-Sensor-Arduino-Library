@@ -21,7 +21,7 @@
 #define VOLTAGE_RES 5
 #define ADC_RES     10
 
-#elif ESP32
+#elif ARDUINO_ARCH_ESP32
 
 #define VOLTAGE_RES 3.3
 #define ADC_RES     12
@@ -30,6 +30,12 @@
 
 #define VOLTAGE_RES 3.3
 #define ADC_RES     10
+
+#else
+
+#define VOLTAGE_RES 5
+#define ADC_RES     10
+
 #endif
 
 
@@ -55,8 +61,8 @@ class MQ_Sensor : public MQUnifiedsensor
 
     void begin();
     void begin(sensorType configcustom);
-    bool begin(int _addr);
-    bool begin(int _addr, sensorType configcustom);
+    bool begin(int _addr, TwoWire* i2c=&Wire);
+    bool begin(int _addr, TwoWire* i2c, sensorType configcustom);
     void setRegressionModel(const sensorType &type);
     bool calibrateSensor(int numOfCalibrations);
     bool digitalRead();

@@ -18,13 +18,13 @@
  * @param _addr             I2C address of the sensor
  * @return bool             True if initialization successful, false if I2C communication fails
  */
-bool MQ_Sensor::begin(int _addr)
+bool MQ_Sensor::begin(int _addr, TwoWire* i2c)
 {
     if (_addr)
     {
-        init(_addr);
-        Wire.beginTransmission(_addr);
-        if (Wire.endTransmission() != 0)
+        init(_addr, i2c);
+        _i2c->beginTransmission(_addr);
+        if (_i2c->endTransmission() != 0)
         {
             return false;
         }
@@ -41,13 +41,13 @@ bool MQ_Sensor::begin(int _addr)
  * @param configcustom      Custom sensor configuration of type sensorType
  * @return bool             True if initialization successful, false if I2C communication fails
  */
-bool MQ_Sensor::begin(int _addr, sensorType configcustom)
+bool MQ_Sensor::begin(int _addr, TwoWire* i2c, sensorType configcustom)
 {
     if (_addr)
     {
-        init(_addr);
-        Wire.beginTransmission(_addr);
-        if (Wire.endTransmission() != 0)
+        init(_addr, i2c);
+        _i2c->beginTransmission(_addr);
+        if (_i2c->endTransmission() != 0)
         {
             return false;
         }

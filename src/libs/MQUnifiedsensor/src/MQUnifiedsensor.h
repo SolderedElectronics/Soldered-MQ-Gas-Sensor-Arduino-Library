@@ -18,7 +18,7 @@ class MQUnifiedsensor
                     String type = "CUSTOM MQ");
 
     // Functions to set values
-    void init(int addr);
+    void init(int _addr, TwoWire *_i2c);
     void update();
     void setR0(float R0 = 10);
     void setRL(float RL = 10);
@@ -47,6 +47,9 @@ class MQUnifiedsensor
 
     bool native = 1;
     byte addr = 0;
+
+  protected:
+    TwoWire* _i2c;
 
   private:
     /************************Private vars************************************/
