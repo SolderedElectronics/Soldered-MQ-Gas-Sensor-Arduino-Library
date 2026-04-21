@@ -5,7 +5,7 @@ var indexSectionsWithContent =
   2: "cmrs",
   3: "bcdgimrsuv",
   4: "_abcdmnrs",
-  5: "acglmos"
+  5: "012abcdefghilmoprstuvwy"
 };
 
 var indexSectionNames =

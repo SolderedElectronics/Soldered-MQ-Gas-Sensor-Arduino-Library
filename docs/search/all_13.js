@@ -1,14 +1,14 @@
 var searchData=
 [
   ['scope_0',['Scope',['../md_src_2libs_2_m_q_unifiedsensor_2_c_o_d_e___o_f___c_o_n_d_u_c_t.html#autotoc_md13',1,'']]],
-  ['sensor_1',['Sensor',['..//github/workspace/gh-pages/src/libs/MQUnifiedsensor/README.md#autotoc_md23',1,'']]],
-  ['sensor_2',['RS/R0 value (From datasheet of your sensor)',['..//github/workspace/gh-pages/src/libs/MQUnifiedsensor/README.md#autotoc_md28',1,'']]],
+  ['sensor_1',['Sensor',['../dir_b3ab259cd20bff42dde3d211bb9c53ae.html#autotoc_md23',1,'']]],
+  ['sensor_2',['RS/R0 value (From datasheet of your sensor)',['../dir_b3ab259cd20bff42dde3d211bb9c53ae.html#autotoc_md28',1,'']]],
   ['sensor_20arduino_20library_3',['MQX Gas Sensor Arduino library',['../index.html',1,'']]],
-  ['sensor_20manufacturers_3a_4',['Sensor manufacturers:',['..//github/workspace/gh-pages/src/libs/MQUnifiedsensor/README.md#autotoc_md35',1,'']]],
+  ['sensor_20manufacturers_3a_4',['Sensor manufacturers:',['../dir_b3ab259cd20bff42dde3d211bb9c53ae.html#autotoc_md35',1,'']]],
   ['sensor_5ftype_5',['sensor_type',['../class_m_q___sensor.html#a336cd5746a4b1b1fb27e5598ff871d94',1,'MQ_Sensor::sensor_type'],['../class_m_q8.html#aede6af05d5b413e721e3db0f4bcdc627',1,'MQ8::sensor_type']]],
   ['sensorconfigdata_2eh_6',['sensorConfigData.h',['../sensor_config_data_8h.html',1,'']]],
   ['sensortype_7',['sensorType',['../structsensor_type.html',1,'']]],
-  ['serial_20debug_20optional_8',['Serial debug (optional)',['..//github/workspace/gh-pages/src/libs/MQUnifiedsensor/README.md#autotoc_md33',1,'']]],
+  ['serial_20debug_20optional_8',['Serial debug (optional)',['../dir_b3ab259cd20bff42dde3d211bb9c53ae.html#autotoc_md33',1,'']]],
   ['serialdebug_9',['serialDebug',['../class_m_q_unifiedsensor.html#ad1eacdd924f38689ff38663fc9dcd1a8',1,'MQUnifiedsensor']]],
   ['seta_10',['setA',['../class_m_q_unifiedsensor.html#af844153d5a21adacdd9c1cb5c7cfb9e1',1,'MQUnifiedsensor']]],
   ['setadc_11',['setADC',['../class_m_q_unifiedsensor.html#a4ffb1897bc82e08285a12357cbcc5a50',1,'MQUnifiedsensor']]],
@@ -19,14 +19,14 @@ var searchData=
   ['setregressionmodel_16',['setRegressionModel',['../class_m_q___sensor.html#affa8253f30ff4675e174a0be1c35320a',1,'MQ_Sensor']]],
   ['setrl_17',['setRL',['../class_m_q_unifiedsensor.html#aa21040f35da35ea213a060b3450f479e',1,'MQUnifiedsensor']]],
   ['setvoltresolution_18',['setVoltResolution',['../class_m_q_unifiedsensor.html#ae635ae08fd77479c804c67ec57028f7e',1,'MQUnifiedsensor']]],
-  ['should_20have_19',['Data of board that you should have',['..//github/workspace/gh-pages/src/libs/MQUnifiedsensor/README.md#autotoc_md26',1,'']]],
-  ['should_20identify_20',['Points you should identify',['..//github/workspace/gh-pages/src/libs/MQUnifiedsensor/README.md#autotoc_md25',1,'']]],
+  ['should_20have_19',['Data of board that you should have',['../dir_b3ab259cd20bff42dde3d211bb9c53ae.html#autotoc_md26',1,'']]],
+  ['should_20identify_20',['Points you should identify',['../dir_b3ab259cd20bff42dde3d211bb9c53ae.html#autotoc_md25',1,'']]],
   ['soldered_21',['About Soldered',['../index.html#autotoc_md5',1,'']]],
   ['source_22',['Original source',['../index.html#autotoc_md6',1,'']]],
   ['source_20license_23',['Open-source license',['../index.html#autotoc_md7',1,'']]],
   ['src_2flibs_2fmqunifiedsensor_2freadme_2emd_24',['README.md',['../src_2libs_2_m_q_unifiedsensor_2_r_e_a_d_m_e_8md.html',1,'']]],
   ['standards_25',['Our Standards',['../md_src_2libs_2_m_q_unifiedsensor_2_c_o_d_e___o_f___c_o_n_d_u_c_t.html#autotoc_md11',1,'']]],
-  ['started_26',['Getting Started',['..//github/workspace/gh-pages/src/libs/MQUnifiedsensor/README.md#autotoc_md21',1,'']]],
+  ['started_26',['Getting Started',['../dir_b3ab259cd20bff42dde3d211bb9c53ae.html#autotoc_md21',1,'']]],
   ['stringtofloat_27',['stringTofloat',['../class_m_q_unifiedsensor.html#a9eb2ad1f3fe879715e9ac9b406a89576',1,'MQUnifiedsensor']]],
-  ['style_20tests_28',['And coding style tests',['..//github/workspace/gh-pages/src/libs/MQUnifiedsensor/README.md#autotoc_md40',1,'']]]
+  ['style_20tests_28',['And coding style tests',['../dir_b3ab259cd20bff42dde3d211bb9c53ae.html#autotoc_md40',1,'']]]
 ];

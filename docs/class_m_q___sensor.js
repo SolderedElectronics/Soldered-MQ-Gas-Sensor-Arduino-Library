@@ -2,8 +2,8 @@ var class_m_q___sensor =
 [
     [ "MQ_Sensor", "class_m_q___sensor.html#a9d09b93ad7a918ffae3425b88fa22e3b", null ],
     [ "begin", "class_m_q___sensor.html#a56bc496cbc16bd2684b9923e1da81dd1", null ],
-    [ "begin", "class_m_q___sensor.html#a12491bfd72850be9be7610e9fee6b29a", null ],
-    [ "begin", "class_m_q___sensor.html#ae93e378a295f7a23480613165632447f", null ],
+    [ "begin", "class_m_q___sensor.html#a15c51926550b065d9b19f5f6231871ca", null ],
+    [ "begin", "class_m_q___sensor.html#afd8ea5797bfaf7d9260cfaf4a003786b", null ],
     [ "begin", "class_m_q___sensor.html#a27e1f9636ea78fd5835e7952d81d48c0", null ],
     [ "calibrateSensor", "class_m_q___sensor.html#a951b7feeb4b2cb933f1450b2299aff86", null ],
     [ "digitalRead", "class_m_q___sensor.html#a718e3373b0ff3a9d540c927a729a0335", null ],
