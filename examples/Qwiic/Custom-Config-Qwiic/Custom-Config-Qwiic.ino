@@ -55,7 +55,7 @@ void setup()
     Serial.begin(115200);
 
     //Initialize I2C connection with sensor with custom config
-    if(!mq138.begin(0x30, MQ138CustomConfig))
+    if(!mq138.begin(0x30, &Wire, MQ138CustomConfig))
     {
       Serial.println("Failed to initialize I2C communication, check wiring");
       while(1)
