@@ -31,6 +31,11 @@
 #define VOLTAGE_RES 3.3
 #define ADC_RES     10
 
+#elif ARDUINO_ARCH_RENESAS
+
+#define VOLTAGE_RES 3.3
+#define ADC_RES     12
+
 #else
 
 #define VOLTAGE_RES 5
